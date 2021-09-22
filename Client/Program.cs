@@ -12,12 +12,14 @@ namespace Client
                 clientData.socket.Connect(clientData.iPEndPoint);
 
                 Console.WriteLine(clientData.GetMsg());
+                Console.WriteLine($"Message from server: " + clientData.GetMsg());
 
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            Console.ReadLine();
         }
     }
 }
